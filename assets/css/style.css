@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+header {
+    background: #002b5c; /* Dark blue */
+    color: #e0f7fa; /* Light teal */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: #e0f7fa; /* Light teal */
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #e0f7fa; /* Light teal */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9BD6EC; /* Cerulean */
+    text-align: center;
+}
+
+.about, .services, .contact, .page-not-found, .privacy, .terms {
+    padding: 40px 20px;
+    text-align: justify;
+    background: #ffffff; /* White background for sections */
+    margin: 20px 0;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+
+footer {
+    background: #808080; /* Medium Grey*/
+    color: #e0f7fa; /* Light teal */
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #002b5c; /* Dark blue */
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 1.5em;
+    }
+}
+
+.showing {
+    display: flex !important;
+}
