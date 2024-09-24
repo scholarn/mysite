@@ -29,6 +29,9 @@ nav {
     color: #000;
     text-decoration: none;
 }
+.logo a{
+    text-decoration: none;
+}
 
 .menu-toggle {
     display: none;
