@@ -4,7 +4,7 @@ description: "The best educational website for students and teachers worldwide."
 url: "https://scholarn.com"
 permalink: pretty
 author: "Md Azaharuddin"
-timezone: Asia/Kolkata
+timezone: "Asia/Kolkata"
 theme: minima
 plugins:
   - jekyll-feed
