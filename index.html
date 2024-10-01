@@ -1,78 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-63DKL6PLX8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+---
+---
 
-  gtag('config', 'G-63DKL6PLX8');
-</script>
-</head>
-<body>
-  <header>
-	<nav>
-	<div class="logo"><a href="/">Scholarn</a></div>
-            <div class="menu-toggle" id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>		
-    <ul class="nav-links" id="nav-links" >
-      <li><a href="/">Home</a></li>
-      <li><a href="/pages/about.html">About</a></li>
-      <li><a href="/pages/contact.html">Contact</a></li>
-      <li><a href="/pages/services.html">Services</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <section id="hero" class="hero">
+<div class="home">
+    <header class="hero">
         <h1>Welcome to Scholarn</h1>
-        <p>Your gateway to modern learning.</p>
-    </section>
+        <p>Your gateway to knowledge and learning.</p>
+        <a href="{{ "/courses/" | relative_url }}" class="btn">Explore Courses</a>
+    </header>
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Scholarn is dedicated to providing the best educational resources for students and teachers worldwide.</p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h3>Online Courses</h3>
-            <p>Access a wide range of online courses to enhance your knowledge.</p>
-        </div>
-        <div class="service-item">
-            <h3>Community Support</h3>
-            <p>Join our community of learners and educators for support and collaboration.</p>
-        </div>
-        <div class="service-item">
-            <h3>Resource Library</h3>
-            <p>Explore our extensive library of educational resources.</p>
+    <section class="featured-courses">
+        <h2>Featured Courses</h2>
+        <div class="course-grid">
+            {% for course in site.courses limit: 4 %}
+            <div class="course-card">
+                <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
+                <p>{{ course.description }}</p>
+                <p><strong>Category:</strong> {{ course.category }}</p>
+                <a href="{{ course.url }}" class="btn">View Course</a>
+            </div>
+            {% endfor %}
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for any queries or support.</p>
-        <a href="/pages/contact.html">Click Here</a>
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <blockquote>
+            <p>"Scholarn has transformed my learning experience!"</p>
+            <cite>- Misbaul</cite>
+        </blockquote>
+        <blockquote>
+            <p>"I love the variety of courses available."</p>
+            <cite>- Sultan</cite>
+        </blockquote>
     </section>
 
+    <section class="latest-updates">
+        <h2>Latest Updates</h2>
+        <ul>
+            {% for post in site.posts limit: 5 %}
+            <li>
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
 
-  <footer>
-<a href="/pages/terms.html">Terms & Conditions</a>
-      <br>
-      <a href="/pages/privacy.html">Privacy Policy</a>
-        <p>&copy; 2024 Scholarn. All rights reserved.</p>
-</footer>
-
-  <script src="/assets/js/main.js"></script>
-</body>
-</html>
+<style>
+    .hero {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 0.25rem;
+    }
+    .featured-courses {
+        margin-bottom: 2rem;
+    }
+    .course-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .course-card {
+        flex: 1 1 calc(25% - 1rem);
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .testimonials {
+        background: #e9ecef;
+        padding: 1rem;
+        margin: 2rem 0;
+        border-radius: 0.5rem;
+    }
+    blockquote {
+        margin: 0.5rem 0;
+        font-style: italic;
+    }
+    .latest-updates ul {
+        list-style: none;
+        padding: 0;
+    }
+    .latest-updates li {
+        margin-bottom: 1rem;
+    }
+</style>

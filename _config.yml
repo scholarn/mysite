@@ -1,0 +1,50 @@
+# Basic Site Settings
+title: Scholarn
+description: "The best educational website for students and teachers worldwide."
+url: "https://scholarn.com"
+permalink: pretty
+author: "Md Azaharuddin"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Google Analytics (optional)
+google_analytics: G-63DKL6PLX8
+
+defaults:
+  # Apply to all pages
+  - scope:
+      path: ""  # An empty string means all files in the project
+      type: "pages"  # Only applies to pages
+    values:
+      layout: "default"
+
+  # Apply to all posts
+  - scope:
+      path: ""  # Applies to all posts
+      type: "posts"
+    values:
+      layout: "post"
+      category: "education"
+      tags: ["learning", "courses"]
+      
+# Apply to all courses
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "default"
+      tags: ["lms", "online learning"]
+
+# Collections Settings
+collections:
+  courses:
+    output: true
+    permalink: /courses/:title/
+
+# Pagination settings (optional)
+paginate: 5                                 # Number of posts per page
+paginate_path: "/page:num/"     # Path for paginated pages
+
