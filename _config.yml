@@ -23,7 +23,7 @@ defaults:
       path: ""  # An empty string means all files in the project
       type: "pages"  # Only applies to pages
     values:
-      layout: "default"
+      layout: "page"
 
   # Apply to all posts
   - scope:
