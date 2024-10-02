@@ -14,9 +14,10 @@ plugins:
 # Google Analytics (optional)
 google_analytics: G-63DKL6PLX8
 
-social:
-  github: https://github.com/scholarn
-  
+# social:
+github_username: scholarn
+
+# Set default
 defaults:
   # Apply to all pages
   - scope:
