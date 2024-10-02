@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Scholarn: Your Learning Journey Begins Here!"
-layout: post
+time: "12:00 AM"
 ---
 
 Dear Scholars,
