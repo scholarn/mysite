@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Scholarn: Your Learning Journey Begins Here!"
-date: 2024-10-02 00:00:00
+date: 2024-10-02 00:00:00 +530
 ---
 
 Dear Scholars,
