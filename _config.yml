@@ -28,7 +28,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      category: "education"
+      category: "blog"
       tags: ["learning", "courses"]
       
 # Apply to all courses
