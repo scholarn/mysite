@@ -1,5 +1,5 @@
 ---
-time: "11:20 AM"
+date: 2024-10-02 11:20:00
 ---
 # Gandhi Jayanti and Mahatma Gandhi: A Legacy of Non-Violence and Leadership
 
