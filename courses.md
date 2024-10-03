@@ -1,8 +1,6 @@
 ---
 title: Courses
 ---
-
-<h2>Our Courses</h2>
 <ul>
   {% for course in site.courses %}
   <li>
