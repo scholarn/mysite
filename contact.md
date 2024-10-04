@@ -23,13 +23,13 @@ Use the form below to send us a message directly from the website:
 <form action="https://formspree.io/your-email@domain.com" method="POST">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
-    
+    <br>
     <label for="email">Your Email:</label>
     <input type="email" id="email" name="_replyto" required>
-    
+   <br> 
     <label for="message">Your Message:</label>
     <textarea id="message" name="message" rows="6" required></textarea>
-    
+    <br>
     <button type="submit">Send Message</button>
 </form>
 
