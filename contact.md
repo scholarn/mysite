@@ -26,7 +26,7 @@ Use the form below to send us a message directly from the website:
     <br>
     <label for="email">Your Email:</label>
     <input type="email" id="email" name="_replyto" required>
-   <br> 
+    <br> 
     <label for="message">Your Message:</label>
     <textarea id="message" name="message" rows="6" required></textarea>
     <br>
