@@ -14,6 +14,13 @@ plugins:
 # Google Analytics (optional)
 google_analytics: G-63DKL6PLX8
 
+# Navigation Menu
+header_pages:
+  - about.md
+  - contact.md
+  - blog.md
+  - courses.md
+  
 # social:
 github_username: scholarn
 
