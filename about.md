@@ -1,5 +1,6 @@
 ---
 title: About
+ql: true
 ---
 
 Welcome to **Scholarn**, your modern learning management system designed to provide an intuitive and efficient learning experience for students, teachers, and educational institutions alike. Scholarn is built to simplify the process of online education by providing a seamless, responsive, and user-friendly interface that caters to all devices.
