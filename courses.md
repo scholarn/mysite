@@ -1,5 +1,6 @@
 ---
 title: Courses
+ql: true
 ---
 <ul>
   {% for course in site.courses %}
