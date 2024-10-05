@@ -7,6 +7,14 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <h3>Quick Links</h3>
+        <ul>
+          {%- for page in site.pages -%}
+          {%- if page.ql == true -%}
+          <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+          {%- endif -%}
+          {%- endfor -%}
+        </ul>
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
