@@ -1,5 +1,6 @@
 ---
 title: Contact
+ql: true
 ---
 
 We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to get in touch with us. Your inquiries are important, and we will do our best to respond promptly.
