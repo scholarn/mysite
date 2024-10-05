@@ -5,7 +5,7 @@ permalink: /privacy-policy/
 ql: true
 ---
 
-**Last Updated: {{ site.time | date: '%Y-%m-%d' }}**
+**Last Updated:** [{{ site.time | date: '%Y-%m-%d' }}]
 
 At **Scholarn**, we are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
 

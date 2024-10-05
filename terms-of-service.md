@@ -33,7 +33,7 @@ In no event shall Scholarn, nor its directors, employees, partners, agents, supp
 Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. Scholarn makes no warranty that the Service will meet your requirements or that it will be available on an uninterrupted, secure, or error-free basis.
 
 ## 7. Governing Law
-These Terms shall be governed and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+These Terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
 
 ## 8. Changes to Terms
 We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
