@@ -35,7 +35,30 @@ By the end of this course, you will be able to:
 - Commas, Periods, and Semicolons
 - Quotation Marks and Apostrophes
 
-.........
+### Module 5: Subject-Verb Agreement
+- Singular and Plural Subjects
+- Special Cases in Agreement
+
+### Module 6: Pronouns and Antecedents
+- Types of Pronouns (Personal, Reflexive, Relative, etc.)
+- Pronoun-Antecedent Agreement
+
+### Module 7: Modifiers and Parallelism
+- Misplaced and Dangling Modifiers
+- Creating Parallel Structure in Writing
+
+### Module 8: Active and Passive Voice
+- Differences Between Active and Passive Voice
+- When and How to Use Passive Voice
+
+### Module 9: Common Grammar Mistakes
+- Run-on Sentences and Sentence Fragments
+- Commonly Confused Words (e.g., "their" vs. "there" vs. "they're")
+
+### Module 10: Advanced Sentence Structures
+- Complex and Compound-Complex Sentences
+- Subordination and Coordination in Sentences
+
 
 ## Who Should Take This Course?
 
