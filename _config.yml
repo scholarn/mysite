@@ -1,5 +1,5 @@
 # Basic Site Settings
-title: Scholarn
+title: "Scholarn"
 description: "The best educational website for students and teachers worldwide."
 url: "https://scholarn.com"
 
@@ -7,6 +7,7 @@ permalink: pretty
 
 author:
   name: "Md Azaharuddin"
+  email: "#@scholarn.com"
 
 timezone: "Asia/Kolkata"
 
@@ -27,16 +28,10 @@ header_pages:
   
 # social:
 social_links:
-  - { platform: github,         user_url: "https://github.com/scholarn" }
+  - { platform: github,  user_url: "https://github.com/scholarn" }
 
 # Set default
 defaults:
-  - 
-    scope:
-      path: ""
-    values:
-      layout: "base"
-    
   # Apply to all pages
   - scope:
       path: ""  # An empty string means all files in the project
