@@ -31,6 +31,12 @@ social_links:
 
 # Set default
 defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      layout: "base"
+    
   # Apply to all pages
   - scope:
       path: ""  # An empty string means all files in the project
