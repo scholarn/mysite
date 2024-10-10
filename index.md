@@ -56,7 +56,7 @@
 
 <style>
     .hero {
-        background-color: #f8f9fa;
+        background-color: #282828;
         padding: 2rem;
         text-align: center;
         margin-bottom: 2rem;
@@ -70,7 +70,7 @@
         margin-bottom: 1.5rem;
     }
     .btn {
-        background-color: #007bff;
+        background-color: #333;
         color: #fff;
         padding: 0.5rem 1rem;
         text-decoration: none;
@@ -86,14 +86,14 @@
     }
     .course-card {
         flex: 1 1 calc(25% - 1rem);
-        background: #fff;
+        background: #282828;
         border: 1px solid #ddd;
         border-radius: 0.5rem;
         padding: 1rem;
         text-align: center;
     }
     .testimonials {
-        background: #e9ecef;
+        background: #282828;
         padding: 1rem;
         margin: 2rem 0;
         border-radius: 0.5rem;
