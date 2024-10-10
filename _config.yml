@@ -2,7 +2,7 @@
 title: "Scholarn"
 description: "The best educational website for students and teachers worldwide."
 url: "https://scholarn.com"
-
+lang: "en"
 permalink: pretty
 
 author:
@@ -26,10 +26,6 @@ header_pages:
   - blog.md
   - courses.md
   
-# social:
-social_links:
-  - { platform: github,  user_url: "https://github.com/scholarn" }
-
 # Set default
 defaults:
   # Apply to all pages
