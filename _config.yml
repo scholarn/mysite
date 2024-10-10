@@ -11,15 +11,11 @@ author:
 timezone: "Asia/Kolkata"
 
 theme: minima
+
 minima:
   skin: "dark"
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Google Analytics (optional)
+# Google Analytics
 google_analytics: "G-63DKL6PLX8"
 
 # Navigation Menu
@@ -64,6 +60,11 @@ collections:
   courses:
     output: true
     permalink: /courses/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Pagination settings (optional)
 paginate: 5                                 # Number of posts per page
