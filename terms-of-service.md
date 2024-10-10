@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Terms of Service"
 ql: true
 ---
