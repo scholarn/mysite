@@ -1,11 +1,7 @@
 ---
-layout: page
 title: "Privacy Policy"
-permalink: /privacy-policy/
 ql: true
 ---
-
-**Last Updated:** [{{ site.time | date: '%Y-%m-%d' }}]
 
 At **Scholarn**, we are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
 
@@ -74,3 +70,5 @@ We will do our best to respond to your inquiry as quickly as possible.
 ## Acceptance of this Privacy Policy
 
 By using our website, you signify your acceptance of this Privacy Policy. If you do not agree to this policy, please do not use our site. Continued use of the site following the posting of changes to this policy will be deemed your acceptance of those changes.
+
+**Last Updated:** [{{ site.time | date: '%Y-%m-%d' }}]

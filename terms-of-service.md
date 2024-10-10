@@ -1,10 +1,7 @@
 ---
-layout: page
 title: "Terms of Service"
 ql: true
 ---
-
-**Last updated:** [{{ site.time | date: '%Y-%m-%d' }}]
 
 Welcome to Scholarn. Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Scholarn website ("Service", "Site") operated by Scholarn ("us", "we", or "our").
 
@@ -41,3 +38,5 @@ We reserve the right, at our sole discretion, to modify or replace these Terms a
 ## 9. Contact Us
 If you have any questions about these Terms, please contact us at:  
 [Email Address]
+
+**Last updated:** [{{ site.time | date: '%Y-%m-%d' }}]
