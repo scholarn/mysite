@@ -98,10 +98,7 @@
         margin: 2rem 0;
         border-radius: 0.5rem;
     }
-    blockquote {
-        margin: 0.5rem 0;
-        font-style: italic;
-    }
+  
     .latest-updates ul {
         list-style: none;
         padding: 0;
