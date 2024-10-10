@@ -2,13 +2,18 @@
 title: Scholarn
 description: "The best educational website for students and teachers worldwide."
 url: "https://scholarn.com"
+
 permalink: pretty
+
 author:
   name: "Md Azaharuddin"
+
 timezone: "Asia/Kolkata"
+
 theme: minima
 minima:
   skin: "dark"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -51,7 +56,7 @@ defaults:
       path: ""
       type: "courses"
     values:
-      layout: "base"
+      layout: "page"
       tags: ["lms", "online learning"]
 
 # Collections Settings
