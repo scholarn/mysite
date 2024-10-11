@@ -13,9 +13,6 @@ timezone: "Asia/Kolkata"
 
 theme: minima
 
-minima:
-  skin: "dark"
-
 # Google Analytics
 google_analytics: "G-63DKL6PLX8"
 
@@ -62,8 +59,4 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-
-# Pagination settings (optional)
-paginate: 5                                 # Number of posts per page
-paginate_path: "/page:num/"     # Path for paginated pages
-
+  
