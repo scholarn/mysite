@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem "jekyll", "~> 4.3.4"
 
 # Theme minima gem
-gem "minimal-mistakes-jekyll"
+gem "minima"
 
 # Other gems
 gem "jekyll-seo-tag", "~> 2.7"
