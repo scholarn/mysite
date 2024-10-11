@@ -12,7 +12,7 @@ author:
 
 timezone: "Asia/Kolkata"
 
-theme: minima
+theme: minimal-mistakes-jekyll
 
 # Google Analytics
 google_analytics: "G-63DKL6PLX8"
