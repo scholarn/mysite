@@ -2,6 +2,7 @@
 title: "Scholarn"
 description: "The best educational website for students and teachers worldwide."
 url: "https://scholarn.com"
+baseurl: ""
 lang: "en"
 permalink: pretty
 
