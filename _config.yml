@@ -25,6 +25,7 @@ header_pages:
   - contact.md
   - blog.md
   - courses.md
+  - mock-test.md
   
 # Set default
 defaults:
@@ -56,7 +57,7 @@ defaults:
 collections:
   courses:
     output: true
-    permalink: /courses/:title/
+    permalink: /courses/:path/
 
 plugins:
   - jekyll-seo-tag

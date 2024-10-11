@@ -4,7 +4,6 @@ description: Master the fundamentals of English grammar with this comprehensive 
 category: Language Arts
 duration: 12 weeks
 level: Beginner to Intermediate
-permalink: /courses/english-grammar/
 ---
 
 ## Course Overview
