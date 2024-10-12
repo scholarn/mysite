@@ -12,7 +12,7 @@ author:
 
 timezone: "Asia/Kolkata"
 
-theme: minima
+#theme: minima
 minima:
   skin: "dark"
 
@@ -32,7 +32,6 @@ defaults:
   # Apply to all pages
   - scope:
       path: ""  # An empty string means all files in the project
-      type: "pages"  # Only applies to pages
     values:
       layout: "page"
 
