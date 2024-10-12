@@ -1,0 +1,9 @@
+- name: Scholarn
+  url: https://scholarn.com
+  description: "Scholarn, the platform for everyone"
+- name: Aikyashree Scholarship Portal
+  url: https://wbmdfcscholarship.in/
+  description: "Scholarship WBMDFC"
+- name: National Scholarship Portal
+  url: https://scholarships.gov.in/
+  description: "Scholarship NSP"

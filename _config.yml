@@ -62,4 +62,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+
+# Generate social links in footer.
+social_links:
+  - { platform: github,         user_url: "https://github.com/scholarn" }
   
