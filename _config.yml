@@ -8,7 +8,6 @@ permalink: pretty
 
 author:
   name: "Md Azaharuddin"
-  email: "#@scholarn.com"
 
 timezone: "Asia/Kolkata"
 
@@ -23,7 +22,6 @@ google_analytics: "G-63DKL6PLX8"
 header_pages:
   - about.md
   - contact.md
-  - blog.md
   - courses.md
   - mock-test.md
   
@@ -42,8 +40,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      category: "blog"
-      tags: ["learning", "courses"]
       
 # Apply to all courses
   - scope:
@@ -51,7 +47,6 @@ defaults:
       type: "courses"
     values:
       layout: "page"
-      tags: ["lms", "online learning"]
 
 # Collections Settings
 collections:
@@ -69,7 +64,3 @@ plugins:
   - jekyll-paginate
   - jekyll-remote-theme
 
-# Generate social links in footer.
-social_links:
-  - { platform: github,         user_url: "https://github.com/scholarn" }
-  

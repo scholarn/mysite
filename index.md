@@ -11,7 +11,7 @@
     <section class="featured-courses">
         <h2>Featured Courses</h2>
         <div class="course-grid">
-            {% for course in site.courses limit: 4 %}
+            {% for course in site.courses limit: 2 %}
             <div class="course-card">
                 <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
                 <p>{{ course.description }}</p>
@@ -22,26 +22,10 @@
         </div>
     </section>
     
-    <section>
-        <header class="hero">
             <blockquote>
                 <p><strong>"Education is the manifestation of the perfection already in man." - Swami Vivekananda</strong></p>
             </blockquote>
-        </header>
-    </section>
-    <section class="testimonials">
-        <h2>What Our Students Say</h2>
-        <blockquote>
-            <p>"Scholarn has transformed my learning experience!"</p>
-            <cite>- Misbaul</cite>
-        </blockquote>
-        <blockquote>
-            <p>"I love the variety of courses available."</p>
-            <cite>- Sultan</cite>
-        </blockquote>
-    </section>
-
-    <section class="latest-updates">
+        <section class="latest-updates">
         <h2>Latest Updates</h2>
         <ul>
             {% for post in site.posts limit: 5 %}
@@ -91,12 +75,6 @@
         border-radius: 0.5rem;
         padding: 1rem;
         text-align: center;
-    }
-    .testimonials {
-        background: #282828;
-        padding: 1rem;
-        margin: 2rem 0;
-        border-radius: 0.5rem;
     }
   
     .latest-updates ul {
