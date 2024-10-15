@@ -32,6 +32,7 @@ defaults:
   # Apply to all pages
   - scope:
       path: ""  # An empty string means all files in the project
+      types: "pages"
     values:
       layout: "page"
 
