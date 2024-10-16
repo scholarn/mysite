@@ -18,9 +18,15 @@ By the end of this course, you will be able to:
 
 ## Course Outline
 
-### Module 1: Introduction to Grammar
-- Parts of Speech
-- Basic Sentence Structure
+<div>
+<ol>
+  {% for lesson in site.lessons %}
+  <li>
+    <h3><a href="{{ lesson.url }}">{{ lesson.title }}</a></h3></li><p>{{ lesson.description }}</p>
+  {% endfor %}
+</ol>
+</div>
+
 
 ### Module 2: Verb Tenses
 - Present, Past, and Future Tenses
@@ -71,8 +77,8 @@ This course is perfect for:
 
 Throughout the course, you will have access to:
 
-- Practice exercises for each module.
-- Video lectures from expert instructors.
-- Discussion forums for peer interaction and support.
+- Practice exercises for each lesson.
+- Quiz.
+- Mock Test.
 
 Contact Us today and take your English skills to the next level!

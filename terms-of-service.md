@@ -1,6 +1,5 @@
 ---
 title: "Terms of Service"
-ql: true
 ---
 
 Welcome to Scholarn. Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Scholarn website ("Service", "Site") operated by Scholarn ("us", "we", or "our").

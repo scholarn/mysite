@@ -11,7 +11,7 @@ author:
 
 timezone: "Asia/Kolkata"
 
-remote_theme: jekyll/minima
+theme: minima
 minima:
   skin: "dark"
 
@@ -22,11 +22,16 @@ google_analytics: "G-63DKL6PLX8"
 header_pages:
   - about.md
   - contact.md
+  - blog.md
   - courses.md
   - mock-test.md
   
 # Set default
 defaults:
+  - scope:
+      path: "blog.md"
+    values:
+      layout: "home"
   # Apply to all pages
   - scope:
       path: ""  # An empty string means all files in the project
@@ -52,15 +57,13 @@ defaults:
 collections:
   courses:
     output: true
-    permalink: /courses/:path/
+    permalink: /courses/:title/
 
-paginate: 5
-paginate_path: "/page:num/"
+  lessons:
+    output: true
+    permalink: /courses/english-grammar/:title/
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-remote-theme
 

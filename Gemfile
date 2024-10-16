@@ -1,15 +1,7 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-# Jekyll Version
-gem "jekyll", "~> 4.3"
+source "https://rubygems.org"
+gemspec
 
-# Remote theme plugin
-gem "jekyll-remote-theme"
-
-# Plugins
-group :jekyll_plugins do
-  gem "jekyll-seo-tag"
-  gem "jekyll-feed"
-  gem "jekyll-sitemap"
-  gem "jekyll-paginate"
-end
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"

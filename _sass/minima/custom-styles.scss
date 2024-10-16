@@ -1,0 +1,19 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+/* custom.scss */
+
+.two-col-flex {
+    ul {
+        display: flex;           /* Flexbox layout */
+        flex-wrap: wrap;         /* Allow items to wrap to the next line */
+        list-style-type: none;   /* Remove bullet points */
+        padding: 0;              /* Remove padding */
+        margin: 0;               /* Remove margin */
+
+        li {
+            width: 50%;             /* Each item takes up half the width (2 items per row) */
+            box-sizing: border-box;  /* Include padding and border in the width */
+            padding: 5px 0;          /* Add spacing between items */
+        }
+    }
+}
