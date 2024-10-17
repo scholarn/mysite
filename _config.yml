@@ -45,6 +45,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: "Md Azaharuddin"
       
 # Apply to all courses
   - scope:
@@ -57,8 +58,8 @@ defaults:
       type: "lessons"
     values:
       layout: "post"
-      author: "Md Azaharuddin"
       category: "grammar"
+      author: "Md Azaharuddin"
       tags:
         - grammar
         - english
