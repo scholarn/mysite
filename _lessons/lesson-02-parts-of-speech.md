@@ -2,6 +2,7 @@
 title: "Parts of Speech"
 description: "Learn about the eight parts of speech in English with examples and explanations."
 slug: "parts of speech"
+date: "2024-10-06"
 ---
 
 In English, **parts of speech** are categories that words fall into based on their function in a sentence. There are **eight** main parts of speech. Let's dive into each one with definitions, examples, and explanations!

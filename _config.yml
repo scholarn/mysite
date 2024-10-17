@@ -48,10 +48,22 @@ defaults:
       
 # Apply to all courses
   - scope:
-      path: ""
       type: "courses"
     values:
       layout: "page"
+
+# Aplly to all lessons
+  - scope:
+      type: "lessons"
+    values:
+      layout: "post"
+      author: "Md Azaharuddin"
+      category: "grammar"
+      tags:
+        - grammar
+        - english
+        - lessons
+      keywords: "English grammar, grammar lesson, grammar rules, English language"
 
 # Collections Settings
 collections:
@@ -66,4 +78,4 @@ collections:
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
-
+  - jekyll-sitemap

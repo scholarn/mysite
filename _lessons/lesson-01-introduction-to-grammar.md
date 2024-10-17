@@ -2,6 +2,7 @@
 title: "Introduction to English Grammar"
 description: "A simple introduction to English grammar concepts."
 slug: introduction-to-english-grammar
+date: "2024-10-05"
 ---
 
 English grammar is the foundation for effective communication. Whether you're writing a blog post, an email, or a report, a good understanding of grammar is essential. In this lesson, we’ll cover some key elements of English grammar to get you started.
