@@ -3,7 +3,7 @@ layout: home
 ---
 <div class="hero">
     <h1>Welcome to Scholarn</h1>
-    <p>Your gateway to knowledge and learning.</p>
+    <p>A School to Learn Together.</p>
     <a href="{{ "/courses/" | relative_url }}" class="btn">Explore Courses</a>
 </div>
 
