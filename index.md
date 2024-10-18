@@ -3,7 +3,7 @@ layout: home
 ---
 <div class="hero">
     <h1>Welcome to Scholarn</h1>
-    <p>A School to Learn Together.</p>
+    <p> - An online school to learn with a rich variety of courses, personalized mentorship, and a flexible approach that adapts to your individual learning style.</p>
     <a href="{{ "/courses/" | relative_url }}" class="btn">Explore Courses</a>
 </div>
 
