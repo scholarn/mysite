@@ -2,7 +2,6 @@
 title: "Active and Passive Voice"
 slug: "active and passive voice"
 description: "Learn Active and Passive Voice"
-date: "2024-10-14"
 ---
 
 Understanding **active** and **passive voice** is essential for effective writing. Each voice serves a different purpose and can significantly impact the clarity and engagement of your sentences. This guide will explain the differences between the two voices, when to use each, and how to convert sentences from one voice to another.

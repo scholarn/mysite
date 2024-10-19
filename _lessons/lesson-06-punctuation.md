@@ -2,7 +2,6 @@
 title: "Punctuation"
 slug: "punctuation"
 description: "Learn Punctuation and its uses."
-date: "2024-10-10"
 ---
 
 Punctuation is essential in written English. It helps readers understand the structure and meaning of sentences by separating words, clauses, and ideas. Whether you are writing formal essays, emails, or creative works, using punctuation correctly ensures clarity and professionalism in your writing. This guide will explore the most commonly used punctuation marks and their correct usage.

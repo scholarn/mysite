@@ -2,7 +2,6 @@
 title: "Clauses and Phrases"
 slug: "clauses and phrases"
 description: "Learn Clauses and Phrases."
-date: "2024-10-09"
 ---
 
 In English grammar, understanding the difference between **clauses** and **phrases** is essential for writing clear, well-structured sentences. While both are groups of words, they serve different functions in a sentence. This guide will break down what clauses and phrases are, how they differ, and how to use them effectively.

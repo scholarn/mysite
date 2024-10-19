@@ -2,7 +2,6 @@
 title: "Common Grammar Mistakes"
 slug:  "common grammar mistakes"
 description: "Learn Common Grammar Mistakes"
-date: "2024-10-16"
 ---
 
 Grammar plays a vital role in clear and effective communication. However, even seasoned writers sometimes struggle with common grammar mistakes that can detract from their writing’s quality. In this guide, we will cover some of the most frequent grammar errors and provide tips on how to avoid them.

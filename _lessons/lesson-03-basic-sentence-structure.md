@@ -2,7 +2,6 @@
 title: "Basic Sentence Structure"
 description: "Learn the fundamentals of constructing sentences in English."
 slug: "basic sentence structure"
-date: "2024-10-07"
 ---
 
 A sentence is a group of words that express a complete thought. To create clear and meaningful sentences, you need to understand their basic structure. In English, sentences consist of two main parts: the **subject** and the **predicate**.

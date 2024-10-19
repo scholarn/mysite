@@ -57,7 +57,7 @@ defaults:
   - scope:
       type: "lessons"
     values:
-      layout: "post"
+      layout: "page"
       category: "grammar"
       author: "Md Azaharuddin"
       tags:
@@ -80,3 +80,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+
+exclude:
+  - '*.gemspec'

@@ -2,7 +2,6 @@
 title: "Pronouns and Antecedents"
 slug: "pronouns and antecedents"
 description: "Learn Pronouns and Antecedents"
-date: "2024-10-12"
 ---
 
 In English grammar, **pronouns** and **antecedents** work together to create clarity and avoid unnecessary repetition. Understanding how they relate is crucial for writing cohesive and grammatically correct sentences.

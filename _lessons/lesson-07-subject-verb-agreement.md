@@ -2,7 +2,6 @@
 title: "Subject-Verb Agreement"
 slug: "subject-verb-agreement"
 description: "Learn Subject-Verb Agreement."
-date: "2024-10-11"
 ---
 
 **Subject-verb agreement** is a fundamental rule in English grammar that ensures the verb in a sentence matches the subject in **number** (singular or plural). Proper subject-verb agreement is key to constructing clear and grammatically correct sentences.

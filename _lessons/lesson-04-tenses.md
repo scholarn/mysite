@@ -2,7 +2,6 @@
 title: "Tenses"
 slug: "tenses"
 description: "Learn the all tenses with structure"
-date: "2024-10-08"
 ---
 
 Tenses are essential for expressing time in the English language. They allow us to describe actions that happened in the past, are happening in the present, or will happen in the future. Understanding verb tenses is key to speaking and writing clearly and effectively.

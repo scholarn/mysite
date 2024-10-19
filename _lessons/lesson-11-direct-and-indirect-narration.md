@@ -2,7 +2,6 @@
 title: "Direct and Indirect Narration"
 slug: "direct and indirect narration"
 description:  "Learn Direct and Indirect Narration"
-date: "2024-10-15"
 ---
 
 In storytelling and writing, **direct** and **indirect narration** are essential tools for conveying dialogue and reported speech. Understanding the difference between these two forms of narration will enhance your writing skills and help you engage your readers more effectively.
