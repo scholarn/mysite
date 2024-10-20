@@ -25,6 +25,7 @@ header_pages:
   - blog.md
   - courses.md
   - mock-test.md
+  - previous-years-question-papers.md
   
 # Set default
 defaults:
@@ -75,6 +76,10 @@ collections:
   lessons:
     output: true
     permalink: /courses/english-grammar/:title/
+
+  mock_tests:
+    output: true
+    permalink: /mock-test/:title/
 
 plugins:
   - jekyll-seo-tag
