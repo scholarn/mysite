@@ -25,6 +25,7 @@ header_pages:
   - blog.md
   - courses.md
   - mock-test.md
+  - syllabus.md
   - previous-years-question-papers.md
   
 # Set default
@@ -67,6 +68,13 @@ defaults:
         - lessons
       keywords: "English grammar, grammar lesson, grammar rules, English language"
 
+# Aplly to all syllabus
+  - scope:
+      type: "syllabus"
+    values:
+      layout: "page"
+    
+
 # Collections Settings
 collections:
   courses:
@@ -80,6 +88,10 @@ collections:
   mock_tests:
     output: true
     permalink: /mock-test/:title/
+
+  syllabus:
+    output: true
+    permalink: /syllabus/:title/
 
 plugins:
   - jekyll-seo-tag
