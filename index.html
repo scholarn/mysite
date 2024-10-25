@@ -10,7 +10,7 @@ layout: home
 <section class="featured-courses">
 <h2>Popular Courses</h2>
     <div class="course-grid">
-            {% for course in site.courses limit: 2 %}
+            {% for course in site.courses limit: 4 %}
         <div class="course-card">
             <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
                 <p>{{ course.description }}</p>

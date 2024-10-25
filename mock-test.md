@@ -1,5 +1,5 @@
 ---
-title: "Mock Test Exam"
+title: "Mock Test"
 ql: true
 ---
 <div>

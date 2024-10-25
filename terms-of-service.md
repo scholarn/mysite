@@ -36,6 +36,6 @@ We reserve the right, at our sole discretion, to modify or replace these Terms a
 
 ## 9. Contact Us
 If you have any questions about these Terms, please contact us at:  
-[Email Address]
+[support@scholarn.com](mailto:support@scholarn.com)
 
-**Last updated:** [{{ site.time | date: '%Y-%m-%d' }}]
+**Last updated:** [2024-10-25]

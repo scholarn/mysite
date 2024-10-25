@@ -61,8 +61,9 @@ If you wish to exercise any of these rights, please contact us using the informa
 
 If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
 
-**Email:** [Email]  
-**Website:** [https://scholarn.com](https://scholarn.com)
+**Email:** [support@scholarn.com](mailto:support@scholarn.com)
+
+**Website:** [scholarn.com](https://scholarn.com)
 
 We will do our best to respond to your inquiry as quickly as possible.
 
