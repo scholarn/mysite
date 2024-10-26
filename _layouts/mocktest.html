@@ -3,6 +3,7 @@ layout: base
 ---
 <h1>{{ page.title }}</h1>
 <div id="mockTestContainer">
+  <div id="progress"></div>
   <div id="questionCard">
     <h2 id="questionText"></h2>
     <form id="mockTestForm">
@@ -12,6 +13,11 @@ layout: base
   </div>
   <div id="feedback" style="display:none;"></div>
 </div>
+<div id="reviewContainer" style="display:none;">
+  <h2>Your Answers</h2>
+  <div id="reviewList"></div>
+  <button id="restartTest">Restart Test</button>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -19,36 +25,44 @@ $(document).ready(function() {
   const questions = {{ page.questions | jsonify }};
   let currentQuestionIndex = 0;
   let score = 0;
+  let userAnswers = [];
 
   function displayQuestion() {
     const question = questions[currentQuestionIndex];
     $('#questionText').text(question.question);
     $('#optionsContainer').empty();
 
-    question.options.forEach((option, index) => {
+    question.options.forEach((option) => {
       $('#optionsContainer').append(`
         <div class="option">
           <label>
-            <input type="radio" name="answer" value="${index}"> ${option.text}
+            <input type="radio" name="answer" value="${option}"> ${option}
           </label>
         </div>
       `);
     });
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    $('#progress').text(`Question ${currentQuestionIndex + 1} of ${questions.length}`);
   }
 
   function showFeedback(isCorrect) {
-    const correctOption = questions[currentQuestionIndex].options.find(opt => opt.correct);
-    const feedbackText = isCorrect ? "Correct!" : "Incorrect. The correct answer is: " + correctOption.text;
+    const correctAnswer = questions[currentQuestionIndex].answer;
+    const feedbackText = isCorrect ? "Correct!" : `Incorrect. The correct answer is: ${correctAnswer}`;
     $('#feedback').text(feedbackText).show();
   }
 
   $('#mockTestForm').on('submit', function(e) {
     e.preventDefault();
-    const selectedOptionIndex = $('input[name="answer"]:checked').val();
+    const selectedOption = $('input[name="answer"]:checked').val();
 
-    if (selectedOptionIndex !== undefined) {
-      const isCorrect = questions[currentQuestionIndex].options[selectedOptionIndex].correct === true;
+    if (selectedOption) {
+      const isCorrect = selectedOption === questions[currentQuestionIndex].answer;
       if (isCorrect) score++;
+      userAnswers.push({ question: questions[currentQuestionIndex].question, selected: selectedOption, correct: questions[currentQuestionIndex].answer });
       showFeedback(isCorrect);
 
       // Move to the next question after a short delay
@@ -58,20 +72,38 @@ $(document).ready(function() {
         if (currentQuestionIndex < questions.length) {
           displayQuestion();
         } else {
-          $('#mockTestContainer').html(`<h2>Test Complete! Your score: ${score}/${questions.length}</h2>`);
+          displayReview();
         }
       }, 2000); // 2 seconds delay
     } else {
-      alert("Please select an answer.");
+      $('#feedback').text("Please select an answer.").show();
     }
+  });
+
+  function displayReview() {
+    $('#mockTestContainer').hide();
+    $('#reviewContainer').show();
+    $('#reviewList').empty();
+    userAnswers.forEach((answer) => {
+      $('#reviewList').append(`<p>${answer.question} <br> Your Answer: ${answer.selected} <br> Correct Answer: ${answer.correct}</p>`);
+    });
+    $('#reviewList').append(`<h3>Your Score: ${score}/${questions.length}</h3>`);
+  }
+
+  $('#restartTest').on('click', function() {
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = [];
+    $('#reviewContainer').hide();
+    $('#mockTestContainer').show();
+    displayQuestion();
   });
 
   displayQuestion(); // Initial call to display the first question
 });
 </script>
-
 <style>
-#mockTestContainer {
+#mockTestContainer, #reviewContainer {
   max-width: 600px;
   margin: auto;
   text-align: center;
@@ -100,22 +132,27 @@ button:hover {
 
 #optionsContainer {
   display: flex;
-  flex-direction: column; /* Stack options vertically */
-  align-items: flex-start; /* Align items to the left */
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 20px;
 }
 
 .option {
-  margin-bottom: 10px; /* Add space between options */
+  margin-bottom: 10px;
 }
 
 input[type="radio"] {
-  margin-right: 10px; /* Space between radio button and label text */
+  margin-right: 10px;
 }
 
 #feedback {
   margin-top: 20px;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+#progress {
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
 </style>
