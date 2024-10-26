@@ -1,6 +1,7 @@
 ---
-title: "GK-Most Important Questions"
-layout: mocktest
+title: "GK-Most Important Questions - Mock Test - 1"
+subject: "General Knowledge"
+topic: "Top 20 Questions"
 questions:
   - question: "Which is the largest planet in our solar system?"
     options:

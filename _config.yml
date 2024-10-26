@@ -74,6 +74,11 @@ defaults:
     values:
       layout: "page"
     
+  # Apply to all mocktest
+  - scope:
+      type: "mocktests"
+    values:
+      layout: "mocktest"
 
 # Collections Settings
 collections:
@@ -85,7 +90,7 @@ collections:
     output: true
     permalink: /courses/english-grammar/:title/
 
-  mock_tests:
+  mocktests:
     output: true
     permalink: /mock-test/:title/
 
