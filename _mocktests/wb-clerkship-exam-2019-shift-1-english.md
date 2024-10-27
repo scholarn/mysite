@@ -1,5 +1,5 @@
 ---
-title: "WB Clerkship Exam 2019 Shift - 2 Mocktest"
+title: "WB Clerkship Exam 2019 Shift - 1 Mocktest"
 subject: "WB Clerkship"
 topic: "English Questions(30 Questions)"
 questions:
@@ -129,7 +129,7 @@ questions:
       - "between"
       - "with"
       - "for"
-    answer: "with"
+    answer: "between"
 
   - question: "Replace the underlined verb with the most appropriate phrasal verb: He decided to ___ him at his home."
     options:

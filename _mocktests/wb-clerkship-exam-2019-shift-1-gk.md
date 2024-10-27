@@ -1,7 +1,7 @@
 ---
 title: "WB Clerkship Exam 2019 Shift - 1 Mock Test"
 subject: "WB Clerkship"
-topic: "General Knowledge(40 Questions)"
+topic: "General Studies(40 Questions)"
 questions:
   - question: "Mahatma Gandhi had first started his non-violent non-cooperation movement in"
     options:
@@ -145,7 +145,7 @@ questions:
       - "Raveesh Kumar"
       - "Arnab Goswami"
       - "Ravindra Kumar"
-    answer: "Ravindra Kumar"
+    answer: "Raveesh Kumar"
 
   - question: "Who among the following was awarded the Nobel Prize in Literature in 2019?"
     options:
@@ -185,7 +185,7 @@ questions:
       - "543"
       - "545"
       - "550"
-    answer: "543"
+    answer: "545"
 
   - question: "Who is currently the Chairman of IMF?"
     options:
@@ -209,7 +209,7 @@ questions:
       - "Finance Minister"
       - "Minister for Railways"
       - "Minister for External Affairs"
-    answer: "Defence Minister"
+    answer: "Minister for Railways"
 
   - question: "The battle of Plassey was fought in"
     options:
