@@ -1,5 +1,4 @@
 ---
-layout: home
 ---
 <div class="hero">
     <h1>Welcome to Scholarn</h1>
@@ -20,11 +19,20 @@ layout: home
             {% endfor %}
     </div>
 </section>
+<section>
+    <h2>Latest Mock Tests</h2>
+    {% assign subjects = site.mocktests | map: 'subject' | uniq %}
 
-<section>    
-    <blockquote>
-        <p><strong>"Education is the manifestation of the perfection already in man." - Swami Vivekananda</strong></p>
-    </blockquote>
+    {% for subject in subjects %}
+        <h2>{{ subject }}</h2>
+        <ul>
+            {% for mocktest in site.mocktests %}
+            {% if mocktest.subject == subject %}
+                <li>
+                    <a href="{{ mocktest.url }}">{{ mocktest.title }}</a> - <em>{{ mocktest.topic }}</em>
+                </li>      {% endif %}
+            {% endfor %}
+        </ul>
+    {% endfor %}
+
 </section>
-
-<h2>Latest Updates</h2>

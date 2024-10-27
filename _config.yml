@@ -22,7 +22,6 @@ google_analytics: "G-63DKL6PLX8"
 header_pages:
   - about.md
   - contact.md
-  - blog.md
   - courses.md
   - mock-test.md
   - syllabus.md
@@ -30,33 +29,23 @@ header_pages:
   
 # Set default
 defaults:
-  - scope:
-      path: "blog.md"
-    values:
-      layout: "home"
   # Apply to all pages
   - scope:
       path: ""  # An empty string means all files in the project
       types: "pages"
     values:
       layout: "page"
-
-  # Apply to all posts
-  - scope:
-      path: ""  # Applies to all posts
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Md Azaharuddin"
       
 # Apply to all courses
   - scope:
+      path: ""
       type: "courses"
     values:
       layout: "page"
 
 # Aplly to all lessons
   - scope:
+      path: ""      
       type: "lessons"
     values:
       layout: "page"
@@ -70,12 +59,14 @@ defaults:
 
 # Aplly to all syllabus
   - scope:
+      path: ""
       type: "syllabus"
     values:
       layout: "page"
     
   # Apply to all mocktest
   - scope:
+      path: ""
       type: "mocktests"
     values:
       layout: "mocktest"
