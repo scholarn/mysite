@@ -7,7 +7,7 @@
 </div>
 
 <section class="featured-courses">
-<h2>Popular Courses</h2>
+<h2><strong>Popular Courses</strong></h2>
     <div class="course-grid">
             {% for course in site.courses limit: 4 %}
         <div class="course-card">
@@ -20,7 +20,7 @@
     </div>
 </section>
 <section>
-    <h2>Latest Mock Tests</h2>
+    <h2><strong>Latest Mock Tests:</strong></h2>
     {% assign subjects = site.mocktests | map: 'subject' | uniq %}
 
     {% for subject in subjects %}
@@ -35,4 +35,12 @@
         </ul>
     {% endfor %}
 
+</section>
+<section>
+<h2><strong>Detailed Syllabus:</strong></h2>
+    {% for syllabus in site.syllabus %}
+        <ul>
+            <li><a href="{{ syllabus.url }}">{{ syllabus.title }}</a></li>
+        </ul>
+    {% endfor %}
 </section>
