@@ -1,7 +1,7 @@
 ---
 title: "WB Clerkship Exam 2019 Shift - 1 Mock Test"
 subject: "WB Clerkship"
-topic: "General Knowledge"
+topic: "General Knowledge(40 Questions)"
 questions:
   - question: "Mahatma Gandhi had first started his non-violent non-cooperation movement in"
     options:
@@ -242,4 +242,85 @@ questions:
       - "Raghuram Rajan"
       - "Jagdish Bhagwati"
     answer: "Raghuram Rajan"
+
+  - question: "Who won the World Championship in Badminton (women's single) in 2019?"
+    options:
+      - "Sania Mirza"
+      - "Saina Nehwal"
+      - "P. V. Sindhu"
+      - "Nozomi Okuhara"
+    answer: "P. V. Sindhu"
+
+  - question: "Khudiram Bose was hanged in"
+    options:
+      - "Medinipur"
+      - "Dum Dum Central Jail"
+      - "Muzaffarpur"
+      - "Presidency Jail, Kolkata"
+    answer: "Muzaffarpur"
+
+  - question: "Where does the Dalai Lama live?"
+    options:
+      - "Mussoorie"
+      - "Rumtek Monastery"
+      - "Tawang"
+      - "Mcleodganj, Dharamshala"
+    answer: "Mcleodganj, Dharamshala"
+
+  - question: "How many districts are there in West Bengal?"
+    options:
+      - "21"
+      - "19"
+      - "24"
+      - "22"
+    answer: "24"
+
+  - question: "Balakot is in"
+    options:
+      - "India's north-east"
+      - "Pakistan's north-west"
+      - "Afghanistan"
+      - "Iran-Afghanistan border"
+    answer: "Pakistan's north-west"
+
+  - question: "Fiji is in"
+    options:
+      - "the Asia-Pacific region"
+      - "the North Atlantic region"
+      - "North Africa"
+      - "South America"
+    answer: "the Asia-Pacific region"
+
+  - question: "Which one of the following is not a Union Territory?"
+    options:
+      - "Chandigarh"
+      - "Andaman and Nicobar Islands"
+      - "Puducherry"
+      - "Tripura"
+    answer: "Tripura"
+
+  - question: "The Howdy Modi programme was held in"
+    options:
+      - "Los Angeles"
+      - "New York"
+      - "Houston"
+      - "Washington"
+    answer: "Houston"
+
+  - question: "Who among the following persons was not a famous sculptor?"
+    options:
+      - "Jogen Chowdhury"
+      - "Nandalal Bose"
+      - "Ramkinkar Baij"
+      - "Tarasankar Bandhopadhyay"
+    answer: "Tarasankar Bandhopadhyay"
+
+  - question: "Greta Thunberg is"
+    options:
+      - "an Actor"
+      - "a Tennis player"
+      - "an Environmental activist"
+      - "a Human Rights activist"
+    answer: "an Environmental activist"
+
 ---
