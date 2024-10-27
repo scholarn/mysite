@@ -1,7 +1,7 @@
 ---
-title: "English Grammar (General) - Mock Test - 1"
+title: "English Grammar - Mock Test - 1"
 subject: "English"
-topic: "Best 10 Questions"
+topic: "General English - Best 10 Questions"
 questions:
   - question: "What is the synonym of 'elated'?"
     options:

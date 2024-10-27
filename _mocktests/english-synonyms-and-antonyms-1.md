@@ -1,7 +1,7 @@
 ---
-title: "English Synonyms and Antonyms - Mock Test -1"
+title: "English Grammar - Mock Test - 2"
 subject: English
-topic: "Best 10 Questions"
+topic: "Synonyms and Antonym - Best 10 Questions"
 questions:
   - question: "What is the synonym of 'Abundant'?"
     options:
