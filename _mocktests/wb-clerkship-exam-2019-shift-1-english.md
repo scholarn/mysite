@@ -1,7 +1,7 @@
 ---
-title: "WB Clerkship Exam 2019 Shift - 1 Mocktest"
+title: "WB Clerkship Exam 2019 Shift - 1 (Eng) Mocktest"
 subject: "WB Clerkship"
-topic: "English Questions(30 Questions)"
+topic: "English(30 Questions)"
 questions:
   - question: "Fill in the blank with an appropriate preposition: He was successful ___ completing the job within four days."
     options:

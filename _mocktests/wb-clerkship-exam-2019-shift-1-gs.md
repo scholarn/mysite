@@ -1,5 +1,5 @@
 ---
-title: "WB Clerkship Exam 2019 Shift - 1 Mock Test"
+title: "WB Clerkship Exam 2019 Shift - 1 (GS) Mock Test"
 subject: "WB Clerkship"
 topic: "General Studies(40 Questions)"
 questions:
