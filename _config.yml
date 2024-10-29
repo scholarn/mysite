@@ -4,7 +4,6 @@ description: "Online School To Learn From Anywhere"
 url: "https://scholarn.com"
 baseurl: ""
 lang: "en"
-permalink: pretty
 
 author:
   name: "Md Azaharuddin"
@@ -94,5 +93,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+permalink: pretty  
 exclude:
   - '*.gemspec'
