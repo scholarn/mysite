@@ -23,16 +23,6 @@
           {%- endif %}
         </ul>
       {%- endif %}
-        <div class="two-col-flex">
-          <h3 class="footer-heading">Important Website Links</h3>
-         <ul>
-          {% for link in site.data.important_links %}
-            <li>
-             <a href="{{ link.url }}" target="_blank">{{ link.name }}</a> - {{ link.description }}
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
       </div>
       <div class="footer-col">
         <div class="two-col-flex">
