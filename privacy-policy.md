@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+permalink: /privacy
 ---
 
 At **Scholarn**, we are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
@@ -59,11 +60,7 @@ If you wish to exercise any of these rights, please contact us using the informa
 
 ## Contact Us
 
-If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
-
-**Email:** [support@scholarn.com](mailto:support@scholarn.com)
-
-**Website:** [scholarn.com](https://scholarn.com)
+If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: [support@scholarn.com](mailto:support@scholarn.com)
 
 We will do our best to respond to your inquiry as quickly as possible.
 
@@ -71,4 +68,4 @@ We will do our best to respond to your inquiry as quickly as possible.
 
 By using our website, you signify your acceptance of this Privacy Policy. If you do not agree to this policy, please do not use our site. Continued use of the site following the posting of changes to this policy will be deemed your acceptance of those changes.
 
-**Last Updated:** [{{ site.time | date: '%Y-%m-%d' }}]
+**Last Updated:** [2024-10-31]

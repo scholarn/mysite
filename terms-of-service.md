@@ -1,5 +1,6 @@
 ---
 title: "Terms of Service"
+permalink: /terms
 ---
 
 Welcome to Scholarn. Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Scholarn website ("Service", "Site") operated by Scholarn ("us", "we", or "our").
@@ -35,7 +36,6 @@ These Terms shall be governed and construed in accordance with the laws of India
 We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
 
 ## 9. Contact Us
-If you have any questions about these Terms, please contact us at:  
-[support@scholarn.com](mailto:support@scholarn.com)
+If you have any questions about these Terms, please contact us at: [support@scholarn.com](mailto:support@scholarn.com)
 
-**Last updated:** [2024-10-25]
+**Last updated:** [2024-10-31]
