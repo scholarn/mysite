@@ -27,13 +27,13 @@ questions:
       - "None of the above"
     answer: "Sings"
   
-  - question: "What is the adverb in the sentence: 'He runs very fast.'"
+  - question: "What is the adverb in the sentence: 'He runs fast.'"
     options:
       - "He"
       - "Runs"
       - "Very"
       - "Fast"
-    answer: "Very"
+    answer: "Fast"
   
   - question: "Choose the preposition in the sentence: 'The cat is under the table.'"
     options:
