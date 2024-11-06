@@ -9,7 +9,7 @@ questions:
       - "Quickly"
       - "Book"
       - "Beautiful"
-    correct_answer: "Book"
+    answer: "Book"
   
   - question: "Which word is an adjective?"
     options:
@@ -17,7 +17,7 @@ questions:
       - "Quick"
       - "Happily"
       - "Table"
-    correct_answer: "Quick"
+    answer: "Quick"
   
   - question: "Identify the verb in this sentence: 'She sings beautifully.'"
     options:
@@ -25,7 +25,7 @@ questions:
       - "Sings"
       - "Beautifully"
       - "None of the above"
-    correct_answer: "Sings"
+    answer: "Sings"
   
   - question: "What is the adverb in the sentence: 'He runs very fast.'"
     options:
@@ -33,7 +33,7 @@ questions:
       - "Runs"
       - "Very"
       - "Fast"
-    correct_answer: "Very"
+    answer: "Very"
   
   - question: "Choose the preposition in the sentence: 'The cat is under the table.'"
     options:
@@ -41,7 +41,7 @@ questions:
       - "Is"
       - "Under"
       - "Table"
-    correct_answer: "Under"
+    answer: "Under"
   
   - question: "Which of these is a pronoun?"
     options:
@@ -49,7 +49,7 @@ questions:
       - "Books"
       - "Laugh"
       - "Silently"
-    correct_answer: "I"
+    answer: "I"
   
   - question: "Which word is a conjunction in the sentence: 'She went to the store and bought some milk.'"
     options:
@@ -57,7 +57,7 @@ questions:
       - "Went"
       - "And"
       - "Bought"
-    correct_answer: "And"
+    answer: "And"
   
   - question: "What type of word is 'quickly' in the sentence: 'He ran quickly.'"
     options:
@@ -65,7 +65,7 @@ questions:
       - "Verb"
       - "Adverb"
       - "Noun"
-    correct_answer: "Adverb"
+    answer: "Adverb"
   
   - question: "Which word is a noun in the sentence: 'The dog barked loudly.'"
     options:
@@ -73,7 +73,7 @@ questions:
       - "Barked"
       - "Loudly"
       - "None of the above"
-    correct_answer: "Dog"
+    answer: "Dog"
   
   - question: "Choose the interjection in this sentence: 'Wow! That was amazing.'"
     options:
@@ -81,5 +81,5 @@ questions:
       - "That"
       - "Was"
       - "Amazing"
-    correct_answer: "Wow"
+    answer: "Wow"
 ---
