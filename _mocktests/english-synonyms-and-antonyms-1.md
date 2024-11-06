@@ -1,5 +1,5 @@
 ---
-title: "English Grammar - Mock Test - 2"
+title: "English Grammar - Mock Test 2"
 subject: English
 topic: "Synonyms and Antonym - Best 10 Questions"
 questions:

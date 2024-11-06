@@ -1,5 +1,5 @@
 ---
-title: "GK-Most Important Questions - Mock Test - 1"
+title: "GK-Most Important Questions - Mock Test 1"
 subject: "General Knowledge"
 topic: "Top 20 Questions"
 questions:

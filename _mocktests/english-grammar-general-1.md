@@ -1,5 +1,5 @@
 ---
-title: "English Grammar - Mock Test - 1"
+title: "English Grammar - Mock Test 1"
 subject: "English"
 topic: "General English - Best 10 Questions"
 questions:
