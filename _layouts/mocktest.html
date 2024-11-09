@@ -6,8 +6,9 @@ layout: base
     max-width: 600px;
     margin: auto;
     text-align: center;
+    padding: 20px;
   }
-  
+
   #questionCard {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -15,7 +16,7 @@ layout: base
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
-  
+
   button {
     background-color: #007bff;
     color: white;
@@ -23,43 +24,55 @@ layout: base
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
-  
+
   button:hover {
     background-color: #0056b3;
   }
-  
+
   #optionsContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
   }
-  
+
   .option {
     margin-bottom: 10px;
   }
-  
+
   input[type="radio"] {
     margin-right: 10px;
   }
-  
+
   #feedback {
     margin-top: 20px;
     font-weight: bold;
     font-size: 1.2em;
+    color: #ff0000;
   }
-  
-  #progress {
+
+  #progress, #timer {
     font-size: 1.1em;
     margin-bottom: 10px;
   }
-  </style>
-  
+
+  .correct-answer {
+    color: green;
+  }
+
+  .incorrect-answer {
+    color: red;
+  }
+</style>
+
 <h1><strong>Subject:</strong> {{ page.subject }}</h1>
 <h2><strong>Topic:</strong> {{ page.topic }}</h2>
+
 <div id="mockTestContainer">
   <div id="progress"></div>
+  <div id="timer"></div>
   <div id="questionCard">
     <h2 id="questionText"></h2>
     <form id="mockTestForm">
@@ -69,9 +82,11 @@ layout: base
   </div>
   <div id="feedback" style="display:none;"></div>
 </div>
+
 <div id="reviewContainer" style="display:none;">
-  <h2>Your Answers</h2>
+  <h2>Review Your Answers</h2>
   <div id="reviewList"></div>
+  <h3 id="finalScore"></h3>
   <button id="restartTest">Restart Test</button>
 </div>
 
@@ -82,13 +97,30 @@ $(document).ready(function() {
   let currentQuestionIndex = 0;
   let score = 0;
   let userAnswers = [];
+  let timer;
 
+  // Initialize the quiz
+  function initQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = [];
+    $('#reviewContainer').hide();
+    $('#mockTestContainer').show();
+    displayQuestion();
+  }
+
+  // Display a question
   function displayQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+      displayReview();
+      return;
+    }
+
     const question = questions[currentQuestionIndex];
     $('#questionText').text(question.question);
     $('#optionsContainer').empty();
 
-    question.options.forEach((option) => {
+    question.options.forEach((option, index) => {
       $('#optionsContainer').append(`
         <div class="option">
           <label>
@@ -99,62 +131,90 @@ $(document).ready(function() {
     });
 
     updateProgress();
+    startTimer();
   }
 
+  // Start timer for each question
+  function startTimer() {
+    let timeLeft = 30; // 15 seconds per question
+    $('#timer').text(`Time Left: ${timeLeft} seconds`);
+    clearInterval(timer);
+    timer = setInterval(() => {
+      timeLeft--;
+      $('#timer').text(`Time Left: ${timeLeft} seconds`);
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        handleAnswer(null); // Auto-submit if time runs out
+      }
+    }, 1000);
+  }
+
+  // Update progress indicator
   function updateProgress() {
     $('#progress').text(`Question ${currentQuestionIndex + 1} of ${questions.length}`);
   }
 
-  function showFeedback(isCorrect) {
-    const correctAnswer = questions[currentQuestionIndex].answer;
-    const feedbackText = isCorrect ? "Correct!" : `Incorrect. The correct answer is: ${correctAnswer}`;
-    $('#feedback').text(feedbackText).show();
-  }
-
+  // Handle form submission
   $('#mockTestForm').on('submit', function(e) {
     e.preventDefault();
     const selectedOption = $('input[name="answer"]:checked').val();
-
-    if (selectedOption) {
-      const isCorrect = selectedOption === questions[currentQuestionIndex].answer;
-      if (isCorrect) score++;
-      userAnswers.push({ question: questions[currentQuestionIndex].question, selected: selectedOption, correct: questions[currentQuestionIndex].answer });
-      showFeedback(isCorrect);
-
-      // Move to the next question after a short delay
-      setTimeout(() => {
-        currentQuestionIndex++;
-        $('#feedback').hide();
-        if (currentQuestionIndex < questions.length) {
-          displayQuestion();
-        } else {
-          displayReview();
-        }
-      }, 2000); // 2 seconds delay
-    } else {
-      $('#feedback').text("Please select an answer.").show();
-    }
+    handleAnswer(selectedOption);
   });
 
+  // Process the user's answer
+  function handleAnswer(selectedOption) {
+    clearInterval(timer);
+    const question = questions[currentQuestionIndex];
+    const isCorrect = selectedOption === question.answer;
+    if (isCorrect) score++;
+
+    userAnswers.push({
+      question: question.question,
+      selected: selectedOption || "No answer",
+      correct: question.answer,
+      isCorrect: isCorrect
+    });
+
+    showFeedback(isCorrect, question.answer);
+
+    setTimeout(() => {
+      $('#feedback').hide();
+      currentQuestionIndex++;
+      displayQuestion();
+    }, 2000); // 2 seconds delay
+  }
+
+  // Display feedback
+  function showFeedback(isCorrect, correctAnswer) {
+    const feedbackText = isCorrect ? "Correct!" : `Incorrect. The correct answer is: ${correctAnswer}`;
+    $('#feedback').text(feedbackText).toggleClass('correct-answer', isCorrect).toggleClass('incorrect-answer', !isCorrect).show();
+  }
+
+  // Show the review of answers
   function displayReview() {
     $('#mockTestContainer').hide();
     $('#reviewContainer').show();
     $('#reviewList').empty();
-    userAnswers.forEach((answer) => {
-      $('#reviewList').append(`<p>${answer.question} <br> Your Answer: ${answer.selected} <br> Correct Answer: ${answer.correct}</p>`);
+    
+    userAnswers.forEach((answer, index) => {
+      const answerClass = answer.isCorrect ? 'correct-answer' : 'incorrect-answer';
+      $('#reviewList').append(`
+        <p class="${answerClass}"><strong>Q${index + 1}:</strong> ${answer.question}<br>
+        <strong>Your Answer:</strong> ${answer.selected}<br>
+        <strong>Correct Answer:</strong> ${answer.correct}</p>
+      `);
     });
-    $('#reviewList').append(`<h3>Your Score: ${score}/${questions.length}</h3>`);
+
+    const scorePercentage = ((score / questions.length) * 100).toFixed(2);
+    $('#finalScore').text(`Your Score: ${score}/${questions.length} (${scorePercentage}%)`);
   }
 
+  // Restart the test
   $('#restartTest').on('click', function() {
-    currentQuestionIndex = 0;
-    score = 0;
-    userAnswers = [];
-    $('#reviewContainer').hide();
-    $('#mockTestContainer').show();
-    displayQuestion();
+    initQuiz();
   });
 
-  displayQuestion(); // Initial call to display the first question
+  // Start the quiz for the first time
+  initQuiz();
 });
 </script>
