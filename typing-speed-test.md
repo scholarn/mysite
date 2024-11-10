@@ -1,11 +1,9 @@
 ---
-title: "Typing Test"
+title: "Typing Speed Test"
 ql: True
 ---
 
 <div class="typing-test-container">
-  <h1>Typing Speed Test</h1>
-
   <section class="options">
     <label for="difficulty-select">Difficulty:
       <select id="difficulty-select">
