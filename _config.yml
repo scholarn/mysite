@@ -12,7 +12,7 @@ timezone: "Asia/Kolkata"
 
 theme: minima
 minima:
-  skin: "dark"
+  skin: "auto"
 
 # Google Analytics
 google_analytics: "G-63DKL6PLX8"
