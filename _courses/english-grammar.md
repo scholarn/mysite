@@ -1,7 +1,7 @@
 ---
 title: English Grammar
 description: Master the fundamentals of English grammar with this comprehensive course. Ideal for students, professionals, and anyone looking to improve their language skills.
-category: Language Arts
+category: Language
 duration: 12 weeks
 level: Beginner to Intermediate
 ---
